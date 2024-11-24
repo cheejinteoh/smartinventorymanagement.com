@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Screen -->
+        <div id="login-screen" class="screen" style="display: block;">
+            <h1>Login</h1>
+            <input type="email" id="email-login" placeholder="Email" required>
+            <input type="password" id="password-login" placeholder="Password" required>
+            <button id="login-btn">Login</button>
+            <button id="show-signup-btn">Sign Up</button>
+        </div>
+
+        <!-- Sign Up Screen -->
+        <div id="signup-screen" class="screen hidden">
+            <h1>Sign Up</h1>
+            <input type="text" id="username-signup" placeholder="Username" required>
+            <input type="email" id="email-signup" placeholder="Email" required>
+            <input type="password" id="password-signup" placeholder="Password" required>
+            <button id="signup-btn">Create Account</button>
+            <button id="show-login-btn">Back to Login</button>
+        </div>
+
+        <!-- Transactions Screen -->
+        <div id="transactions-screen" class="screen hidden">
+            <h1>Transaction Details</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Transaction Type</th>
+                        <th>Date</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody id="transactions-table">
+                    <!-- Transactions will be dynamically inserted here -->
+                </tbody>
+            </table>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

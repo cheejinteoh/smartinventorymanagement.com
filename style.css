@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Beautiful gradient background */
+}
+
+#app {
+    width: 90%;
+    max-width: 350px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active, .screen[style*="display: block"] {
+    display: block;
+}
+
+input, button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-image: linear-gradient(to right, #ff7eb9, #ff65a3); /* Pink gradient */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, #ff65a3, #ff4b81);
+    transform: scale(1.05);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+}
